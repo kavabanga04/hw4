@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: red;
+}
+.gallery{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gallery__item {
+  height: 300px;
+  width: 33.33%;
+  overflow: hidden;
+}
+.gallery__item img {
+  display: block;
+  width: 100%;
+}
+@media(max-width:1200px){
+    .gallery__item{
+        width: 50%;
+    }
+}
+@media(max-width:700px) {
+    .gallery__item{
+        width: 100%;
+    }
+}
